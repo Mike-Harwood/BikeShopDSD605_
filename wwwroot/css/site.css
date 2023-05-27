@@ -1,22 +1,284 @@
+
+
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 70px;
 }
+/*-- banner --*/
+.banner {
+    background: url(/Images/Bikes2.jpg) no-repeat 0px -286px;
+    background-size: cover;
+    /*    padding: 0em 0 0em;*/
+    opacity: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .banner {
+        background-position: center center;
+        /* Adjust the background position for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        background-size: contain;
+        /* Adjust the background size for smaller screens */
+    }
+}
+
+.header-top {
+    outline: none;
+}
+
+.agile-logo {
+    width: 10%;
+    float: left;
+    margin-top: 1em;
+}
+
+    .agile-logo h1 {
+        margin: 0;
+    }
+
+        .agile-logo h1 a {
+            color: #FFFFFF;
+            font-size: 1.4em;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+
+            .agile-logo h1 a span {
+                display: block;
+                font-size: .24em;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 12px;
+                margin: .5em 0 0 0;
+            }
+
+.w3l-banner-grids {
+    padding: 18em 0 0 0;
+}
+
+
+.header-right {
+    float: right;
+}
+
+.container.banner-drop.nav-open {
+    margin-top: 6em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.page-header__content .text-bg {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+    .page-header__content .text-bg svg {
+        width: 100%;
+        height: 550px;
+    }
+
+        .page-header__content .text-bg svg text {
+            text-anchor: middle;
+        }
+
+        .page-header__content .text-bg svg #alpha {
+            fill: #b3b3b3;
+        }
+
+        .page-header__content .text-bg svg #title1, .page-header__content .text-bg svg #title2, .page-header__content .text-bg svg #title3, .page-header__content .text-bg svg #title4 {
+            font-size: 16em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+        }
+
+        .page-header__content .text-bg svg #title4 {
+            fill: rgba(51, 61, 72, 0);
+        }
+
+.w3ls-slider {
+    position: relative;
+    min-height: 450px;
+}
+/*-- text --*/
+.page-header__content .text-bg {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+    .page-header__content .text-bg svg {
+        width: 100%;
+        height: 550px;
+    }
+
+        .page-header__content .text-bg svg text {
+            text-anchor: middle;
+        }
+
+        .page-header__content .text-bg svg #alpha {
+            fill: #b3b3b3;
+        }
+
+        .page-header__content .text-bg svg #title1, .page-header__content .text-bg svg #title2, .page-header__content .text-bg svg #title3, .page-header__content .text-bg svg #title4 {
+            font-size: 16em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+        }
+
+        .page-header__content .text-bg svg #title4 {
+            fill: rgba(51, 61, 72, 0);
+        }
+
+.w3l-banner-grids {
+    padding: 14em 0 0 0;
+}
+
+.social-grids {
+    padding: 0em 0 0em 0;
+}
+
+.w3l-services-grid {
+    float: left;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+.w3layouts-services-heading h2, .w3-agileits-rides-heading h3, .w3-training-heading h3, .agileits-about-top-heading h3, .w3layouts-contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
+    font-size: 1.5em;
+}
+/*-- services --*/
+.about-header-top {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.services {
+    padding: 4em 0;
+    background: #FFFFFF;
+    opacity: 50%;
+}
+
+.w3layouts-services-heading {
+    text-align: center;
+}
+
+    .w3layouts-services-heading h2, .w3-agileits-rides-heading h3, .w3-training-heading h3, .agileits-about-top-heading h3, .w3layouts-contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
+        color: #f35041;
+        font-size: 2em;
+        margin: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+.w3-services-grids {
+    margin: 4em 0 0 0;
+}
+
+.w3l-services-grid {
+    text-align: center;
+}
+
+.w3ls-services-img i.fa.fa-male, .w3ls-services-img i.fa.fa-bicycle, .w3ls-services-img i.fa.fa-cog, .w3ls-services-img i.fa.fa-female {
+    width: 90px;
+    height: 90px;
+    color: #dadfe2;
+    font-size: 4em;
+    padding: .2em 0 0 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.agileits-services-info h4 {
+    color: #000000;
+    font-size: 1.2em;
+    margin: 1em 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.agileits-services-info p {
+    color: #999999;
+    font-size: .9em;
+    line-height: 1.8em;
+    margin: 0;
+}
+
+.w3l-services-grid:hover div.w3ls-services-img i.fa.fa-male, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-bicycle, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-cog, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-female {
+    background: #f35041;
+    padding: .9em 0 0 0;
+    width: 90px;
+    height: 90px;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+/*-- //services --*/
+@media(max-width:1440px) {
+    .banner {
+        background: url(../images/Bikes2.jpg) no-repeat 0px -265px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:1366px) {
+    .banner {
+        background: url(../images/Bikes2.jpg) no-repeat 0px -200px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:1280px) {
+    .banner {
+        background: url(../images/Bikes2.jpg) no-repeat 0px -150px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:1080px) {
+    .banner {
+        background: url(../images/Bikes2.jpg) no-repeat 0px 0px;
+        background-size: cover;
+    }

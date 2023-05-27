@@ -9,5 +9,9 @@ namespace BikeShopDSD605.Data
             : base(options)
         {
         }
+        public DbSet<BikeShopDSD605.Models.Customers> Customers { get; set; } = default!;
+        public DbSet<BikeShopDSD605.Models.Orders> Orders { get; set; } = default!;
+        public DbSet<BikeShopDSD605.Models.Staffs> Staffs { get; set; } = default!;
+        public DbSet<BikeShopDSD605.Models.Stocks> Stocks { get; set; } = default!;
     }
 }
