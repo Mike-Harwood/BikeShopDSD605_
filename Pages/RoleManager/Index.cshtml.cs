@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BikeShopDSD605.Pages.RoleManager
 {
+
     [BindProperties]
     public class IndexModel : PageModel
     {
