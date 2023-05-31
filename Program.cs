@@ -33,6 +33,22 @@ builder.Services.Configure<IdentityOptions>(options =>
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
     options.User.RequireUniqueEmail = false;
 });
+
+
+//Adding Policies
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policyBuilder => policyBuilder.RequireRole("Admin"));
+});
+
+builder.Services.AddRazorPages(options =>
+{
+    //options.Conventions.AuthorizeFolder("/RoleManager", "AdminPolicy");
+});
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
