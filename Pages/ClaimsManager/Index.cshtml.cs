@@ -5,7 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BikeShopDSD605.Pages.ClaimsManager
 {
+    //[Authorize(Policy = "ViewClaimPolicy")]
+
+
     [BindProperties]
+
+
     public class IndexModel : PageModel
     {
         public UserManager<IdentityUser> _UserManager { get; set; }

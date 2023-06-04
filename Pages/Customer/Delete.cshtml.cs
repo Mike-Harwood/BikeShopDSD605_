@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BikeShopDSD605.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using BikeShopDSD605.Data;
-using BikeShopDSD605.Models;
 
 namespace BikeShopDSD605.Pages.Customer
 {
+
+    [Authorize(Policy = "DeleteStockPolicy")]
     public class DeleteModel : PageModel
     {
         private readonly BikeShopDSD605.Data.ApplicationDbContext _context;
@@ -20,7 +18,7 @@ namespace BikeShopDSD605.Pages.Customer
         }
 
         [BindProperty]
-      public Customers Customers { get; set; } = default!;
+        public Customers Customers { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(Guid? id)
         {
@@ -35,7 +33,7 @@ namespace BikeShopDSD605.Pages.Customer
             {
                 return NotFound();
             }
-            else 
+            else
             {
                 Customers = customers;
             }

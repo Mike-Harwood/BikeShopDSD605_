@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BikeShopDSD605.Pages.Order
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly BikeShopDSD605.Data.ApplicationDbContext _context;

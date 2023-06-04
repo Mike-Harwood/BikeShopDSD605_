@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BikeShopDSD605.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using BikeShopDSD605.Data;
-using BikeShopDSD605.Models;
 
 namespace BikeShopDSD605.Pages.Staff
 {
+    [Authorize("EditStockPolicy")]
     public class EditModel : PageModel
     {
         private readonly BikeShopDSD605.Data.ApplicationDbContext _context;
@@ -30,7 +26,7 @@ namespace BikeShopDSD605.Pages.Staff
                 return NotFound();
             }
 
-            var staffs =  await _context.Staffs.FirstOrDefaultAsync(m => m.StaffId == id);
+            var staffs = await _context.Staffs.FirstOrDefaultAsync(m => m.StaffId == id);
             if (staffs == null)
             {
                 return NotFound();
@@ -71,7 +67,7 @@ namespace BikeShopDSD605.Pages.Staff
 
         private bool StaffsExists(Guid id)
         {
-          return (_context.Staffs?.Any(e => e.StaffId == id)).GetValueOrDefault();
+            return (_context.Staffs?.Any(e => e.StaffId == id)).GetValueOrDefault();
         }
     }
 }

@@ -6,8 +6,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BikeShopDSD605.Pages.RoleManager
 {
+    //[Authorize(Policy = "ViewRolePolicy")]
+
 
     [BindProperties]
+
+
     public class IndexModel : PageModel
     {
         private readonly ApplicationDbContext _context;

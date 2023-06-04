@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using BikeShopDSD605.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using BikeShopDSD605.Data;
-using BikeShopDSD605.Models;
 
 namespace BikeShopDSD605.Pages.Staff
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly BikeShopDSD605.Data.ApplicationDbContext _context;
@@ -19,7 +15,7 @@ namespace BikeShopDSD605.Pages.Staff
             _context = context;
         }
 
-        public IList<Staffs> Staffs { get;set; } = default!;
+        public IList<Staffs> Staffs { get; set; } = default!;
 
         public async Task OnGetAsync()
         {
