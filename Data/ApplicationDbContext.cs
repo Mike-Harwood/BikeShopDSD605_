@@ -13,5 +13,8 @@ namespace BikeShopDSD605.Data
         public DbSet<BikeShopDSD605.Models.Orders> Orders { get; set; } = default!;
         public DbSet<BikeShopDSD605.Models.Staffs> Staffs { get; set; } = default!;
         public DbSet<BikeShopDSD605.Models.Stocks> Stocks { get; set; } = default!;
+
+        public DbSet<BikeShopDSD605.Models.Cast> Cast { get; set; } = default!;
+        public DbSet<BikeShopDSD605.Models.Movie> Movie { get; set; } = default!;
     }
 }
