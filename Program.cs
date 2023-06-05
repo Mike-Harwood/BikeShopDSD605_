@@ -3,7 +3,21 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
+//Allow CORS Global
+var CORSAllowSpecificOrigins = "CORSAllowed";
 var builder = WebApplication.CreateBuilder(args);
+
+
+//Add CORS to the Project
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: CORSAllowSpecificOrigins,
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:3000", "http://www.contoso.com");
+    });
+});
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -123,6 +137,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+//Allow CORS
+app.UseCors(CORSAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
