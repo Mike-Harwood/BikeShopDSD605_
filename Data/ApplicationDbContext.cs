@@ -16,5 +16,6 @@ namespace BikeShopDSD605.Data
 
         public DbSet<BikeShopDSD605.Models.Cast> Cast { get; set; } = default!;
         public DbSet<BikeShopDSD605.Models.Movie> Movie { get; set; } = default!;
+        public object Stock { get; set; }
     }
 }

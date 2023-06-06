@@ -65,6 +65,11 @@ namespace BikeShopDSD605.Pages.Stock
             return RedirectToPage("./Index");
         }
 
+        private bool StocksExists(Guid? stockId)
+        {
+            throw new NotImplementedException();
+        }
+
         private bool StocksExists(Guid id)
         {
             return (_context.Stocks?.Any(e => e.StockId == id)).GetValueOrDefault();
