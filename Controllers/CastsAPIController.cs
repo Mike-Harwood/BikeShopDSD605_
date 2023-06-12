@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using BikeShopDSD605.Data;
+using BikeShopDSD605.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using BikeShopDSD605.Data;
-using BikeShopDSD605.Models;
 
 namespace BikeShopDSD605.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CastsAPIController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -25,10 +21,10 @@ namespace BikeShopDSD605.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cast>>> GetCast()
         {
-          if (_context.Cast == null)
-          {
-              return NotFound();
-          }
+            if (_context.Cast == null)
+            {
+                return NotFound();
+            }
             return await _context.Cast.ToListAsync();
         }
 
@@ -36,10 +32,10 @@ namespace BikeShopDSD605.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Cast>> GetCast(Guid id)
         {
-          if (_context.Cast == null)
-          {
-              return NotFound();
-          }
+            if (_context.Cast == null)
+            {
+                return NotFound();
+            }
             var cast = await _context.Cast.FindAsync(id);
 
             if (cast == null)
@@ -86,10 +82,10 @@ namespace BikeShopDSD605.Controllers
         [HttpPost]
         public async Task<ActionResult<Cast>> PostCast(Cast cast)
         {
-          if (_context.Cast == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Cast'  is null.");
-          }
+            if (_context.Cast == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Cast'  is null.");
+            }
             _context.Cast.Add(cast);
             await _context.SaveChangesAsync();
 
