@@ -76,6 +76,15 @@ body {
                 margin: .5em 0 0 0;
             }
 
+.nav-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+    .nav-link:hover {
+        color: crimson;
+    }
+
 .w3l-banner-grids {
     padding: 18em 0 0 0;
 }
@@ -154,15 +163,69 @@ body {
         }
 
         .page-header__content .text-bg svg #title1, .page-header__content .text-bg svg #title2, .page-header__content .text-bg svg #title3, .page-header__content .text-bg svg #title4 {
-            font-size: 16em;
+            font-size: 14em;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 12px;
+            letter-spacing: 10px;
         }
 
         .page-header__content .text-bg svg #title4 {
             fill: rgba(51, 61, 72, 0);
         }
+
+@media (max-width: 320px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 1024px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 8em;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1680px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 10em;
+    }
+}
+
+@media (min-width: 1681px) {
+    .page-header__content .text-bg svg #title1,
+    .page-header__content .text-bg svg #title2,
+    .page-header__content .text-bg svg #title3,
+    .page-header__content .text-bg svg #title4 {
+        font-size: 12em;
+    }
+}
 
 .w3l-banner-grids {
     padding: 14em 0 0 0;

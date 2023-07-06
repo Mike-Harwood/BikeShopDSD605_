@@ -26,4 +26,10 @@
 		</PackageReference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Reference Include="APIIntergrationTest">
+	    <HintPath>..\APIIntergrationTest\obj\Debug\net7.0\APIIntergrationTest.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
 </Project>
