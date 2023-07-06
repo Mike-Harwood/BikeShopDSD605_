@@ -85,7 +85,7 @@ body {
         color: crimson;
     }
 
-.w3l-banner-grids {
+.banner-grids {
     padding: 18em 0 0 0;
 }
 
@@ -134,7 +134,7 @@ body {
             fill: rgba(51, 61, 72, 0);
         }
 
-.w3ls-slider {
+.slider {
     position: relative;
     min-height: 450px;
 }
@@ -227,7 +227,7 @@ body {
     }
 }
 
-.w3l-banner-grids {
+.banner-grids {
     padding: 14em 0 0 0;
 }
 
@@ -235,13 +235,13 @@ body {
     padding: 0em 0 0em 0;
 }
 
-.w3l-services-grid {
+.services-grid {
     float: left;
     width: 50%;
     margin-bottom: 2em;
 }
 
-.w3layouts-services-heading h2, .w3-agileits-rides-heading h3, .w3-training-heading h3, .agileits-about-top-heading h3, .w3layouts-contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
+.services-heading h2, .agileits-rides-heading h3, .training-heading h3, .agileits-about-top-heading h3, .contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
     font-size: 1.5em;
 }
 /*-- services --*/
@@ -255,11 +255,11 @@ body {
     opacity: 65%;
 }
 
-.w3layouts-services-heading {
+.services-heading {
     text-align: center;
 }
 
-    .w3layouts-services-heading h2, .w3-agileits-rides-heading h3, .w3-training-heading h3, .agileits-about-top-heading h3, .w3layouts-contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
+    .services-heading h2, .agileits-rides-heading h3, .training-heading h3, .agileits-about-top-heading h3, .contact-form-top h3, .contact-form-top h3, .w3agile-map h3, .agileits_three_comments h3, .w3_leave_comment h3 {
         color: #f35041;
         font-size: 2em;
         margin: 0;
@@ -268,15 +268,15 @@ body {
         letter-spacing: 2px;
     }
 
-.w3-services-grids {
+.services-grids {
     margin: 4em 0 0 0;
 }
 
-.w3l-services-grid {
+.services-grid {
     text-align: center;
 }
 
-.w3ls-services-img i.fa.fa-male, .w3ls-services-img i.fa.fa-bicycle, .w3ls-services-img i.fa.fa-cog, .w3ls-services-img i.fa.fa-female {
+.services-img i.fa.fa-male, .services-img i.fa.fa-bicycle, .services-img i.fa.fa-cog, .services-img i.fa.fa-female {
     width: 90px;
     height: 90px;
     color: #dadfe2;
@@ -310,7 +310,7 @@ body {
     margin: 0;
 }
 
-.w3l-services-grid:hover div.w3ls-services-img i.fa.fa-male, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-bicycle, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-cog, .w3l-services-grid:hover div.w3ls-services-img i.fa.fa-female {
+.services-grid:hover div.services-img i.fa.fa-male, .services-grid:hover div.services-img i.fa.fa-bicycle, .services-grid:hover div.services-img i.fa.fa-cog, .services-grid:hover div.services-img i.fa.fa-female {
     background: #f35041;
     padding: .9em 0 0 0;
     width: 90px;
